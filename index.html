@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="styleSheet" href="styles/style.css">
+    <title>Encriptador ONE G7</title>
+    
+    <!--Fuentes-->
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Glory:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+            <a href="https://www.aluracursos.com/"><img id="logoAlura" src="Images/logo_alura.png" width="50px" alt="Logo de Alura LATAM"></a>
+            <h1>Encriptador de Texto</h1>
+    </header>
+
+    <main>
+        <!--Area de encriptado-->
+        <div class="encryptArea">
+            <div class="encryptArea__input">
+                <textarea id="inputText" maxlength="475" rows="1" cols="25" placeholder="Ingresa el texto aquí"></textarea><br>
+            </div>
+            <div class="encryptArea__Btn">
+                <button id="encryptBtn" class="encryptBtn">Encriptar</button>
+                <button id="decryptBtn" class="decryptBtn">Desencriptar</button>
+            </div>
+        </div>
+
+        <!--Solicitud para desencriptar-->
+        <div class="decryptArea">
+            <div class="decryptArea__init">
+                <img id="decryptArea__img" src="Images/corbatin.jpg" width = "350px" alt="animacion con una gran lupa"><br>
+                <h3 id="decryptArea__alert">¡Ningún mensaje fue encontrado!<br><br></h3>
+                <p id="decryptArea__request">Ingresa el texto a encriptar/desencriptar</p>
+            </div>
+            <div class="decryptArea__final">
+                <div class="resultText__container">
+                    <p id="resultText"></p>
+                </div>
+                <div class="copyBtn__container">
+                    <button id="copyBtn">Copiar</button>
+                </div>
+            </div>
+        </div>
+
+        <script rel="script" src="app.js"></script>
+        
+      
+    </main>
+
+    <footer>
+        <a  style="text-decoration: none;"><p id="footerInfo">ONE G7</p></a>
+    </footer>
+</body>
+</html>
